@@ -11,4 +11,12 @@ then
         fi
 dnf install mysql -y
 
+if [ $? -ne 0 ]
+then 
+    echo "installation of mysql....failure"
+    exit 1
+fi
+dnf install git -y
+
+
 echo "is script proceeding?"
