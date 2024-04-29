@@ -3,10 +3,14 @@
 userid=$(id -u)
 
 validate(){
-    echo "exit status: $1"
-    echo "what are you doing: $2"
+   if [ $1 -ne 0]
+   then
+        echo "$2...failuru"
+        exit 1
+    else
+        echo "$2...success"
+    fi
 }
-
 if [ $userid -ne 0 ] 
 then     
     echo "please run this script with root access."
