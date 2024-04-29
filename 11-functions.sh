@@ -2,7 +2,7 @@
 
 userid=$(id -u)
 TIMESTAMP=$(DATE +%f-%h-%s)
-script_name=$($0 |cut -d "." -f1)                                                                                                                -f1
+script_name=$(echo $0 |cut -d "." -f1)                                                                                                                -f1
 
 logfile=/temp/$script_name-$timestamp.log
 
