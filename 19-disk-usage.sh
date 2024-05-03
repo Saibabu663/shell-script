@@ -14,6 +14,6 @@ do
     fi
 done <<< $DISk_USAGE
 
-echo -e "Message: $MESSAGE"
+echo -e "MESSAGE: $MESSAGE"
 
 
